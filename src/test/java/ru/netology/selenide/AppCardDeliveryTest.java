@@ -28,7 +28,7 @@ public class AppCardDeliveryTest {
         $("button.button").click();
         $(".notification__content")
                 .shouldBe(Condition.visible, Duration.ofSeconds(15))
-                .shouldHave(Condition.exactText("Встреча успешно забронирована на " + planningDate));
+                .shouldHave(Condition.exactText("Встреча успешно назначена на " + planningDate));
     }
 
     private String generateDate(int addedDays) {
